@@ -25,7 +25,7 @@
 | 19  | [Fabrikam, Inc is a manufacturing company that has a main office in New York and a branch office in Seattle. The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. VM1 and VM2 are connected to the internet. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP1 contains a scope named Scope1 that has addresses for the New York office, DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. The network contains a single on-premises Active Directory Domain Services (AD DS) domain named corp.falbrikam.com. Currently, all the service accounts use individual domain user accounts. All domain controllers have the DNS Server role installed and host a copy of the Active Directory integrated DNS zone of corp.fabrikam.com. The corp.fabrikam.com AD DS domain syncs with an Azure Active Directory (Azure AD) tenant. The corp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Fabrikam identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and FxpressRoute. Both on premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattlefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam.com in Vnet1. Deploy an Azure Virtual Desktop host pool to Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD-joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Fabrikam identifies the following networking requirements: Implement Virtual WAN and ensure that all the network traffic between the sites uses Virtual WAN. All communications must occur over ExpressRoute. If a DHCP server fails, ensure that the client computers can continue to receive their dynamic IP address and renew their existing lease. Ensure that the resources in Vnet1 can resolve the names of the on-premises servers in the corp.fabrikam.com domain. Fabrikam identifies the following security requirements: Apply GPO4 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout time manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab, f@br1kAm or fabr!|. Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. Which three actions should you perform in sequence to meet the security requirements for Webapp1?](#fabrikam-inc-is-a-manufacturing-company-that-has-a-main-office-in-new-york-and-a-branch-office-in-seattle-the-on-premises-network-contains-servers-that-run-windows-server-as-shown-in-the-following-table-dc1-hosts-all-the-operation-master-roles-vm1-and-vm2-are-connected-to-the-internet-web1-and-web2-run-an-internet-information-services-iis-web-app-named-webapp1-the-new-york-and-seattle-offices-are-connected-by-using-redundant-wan-links-the-client-computers-in-each-office-get-ip-addresses-from-their-local-dhcp-server-dhcp1-contains-a-scope-named-scope1-that-has-addresses-for-the-new-york-office-dhcp2-contains-a-scope-named-scope2-that-has-addresses-for-the-seattle-office-the-network-contains-a-single-on-premises-active-directory-domain-services-ad-ds-domain-named-corpfalbrikamcom-currently-all-the-service-accounts-use-individual-domain-user-accounts-all-domain-controllers-have-the-dns-server-role-installed-and-host-a-copy-of-the-active-directory-integrated-dns-zone-of-corpfabrikamcom-the-corpfabrikamcom-ad-ds-domain-syncs-with-an-azure-active-directory-azure-ad-tenant-the-corpfabrikamcom-domain-contains-the-organizational-units-ous-and-custom-group-policy-objects-gpos-shown-in-the-following-table-fabrikam-identifies-the-following-planned-changes-create-a-single-azure-subscription-named-sub1-that-will-contain-a-single-azure-virtual-network-named-vnet1-replace-the-wan-links-between-the-seattle-and-new-york-offices-by-using-azure-virtual-wan-and-fxpressroute-both-on-premises-offices-will-be-connected-to-vnet1-by-using-expressroute-create-three-azure-file-shares-named-newyorkfiles-seattlefiles-and-companyfiles-create-a-domain-controller-named-dc3corpfabrikamcom-in-vnet1-deploy-an-azure-virtual-desktop-host-pool-to-vnet1-the-azure-virtual-desktop-session-hosts-will-be-hybrid-azure-ad-joined-license-all-servers-for-microsoft-defender-for-servers-use-azure-policy-to-enforce-configuration-management-policies-on-the-servers-in-azure-and-on-premises-fabrikam-identifies-the-following-networking-requirements-implement-virtual-wan-and-ensure-that-all-the-network-traffic-between-the-sites-uses-virtual-wan-all-communications-must-occur-over-expressroute-if-a-dhcp-server-fails-ensure-that-the-client-computers-can-continue-to-receive-their-dynamic-ip-address-and-renew-their-existing-lease-ensure-that-the-resources-in-vnet1-can-resolve-the-names-of-the-on-premises-servers-in-the-corpfabrikamcom-domain-fabrikam-identifies-the-following-security-requirements-apply-gpo4-to-the-azure-virtual-desktop-session-hosts-ensure-that-azure-virtual-desktop-user-sessions-lock-after-being-idle-for-10-minutes-users-must-be-able-to-control-the-lockout-time-manually-from-their-client-computer-ensure-that-server-administrators-request-approval-before-they-can-establish-a-remote-desktop-connection-to-an-azure-virtual-machine-if-the-request-is-approved-the-connection-must-be-established-within-two-hours-prevent-user-passwords-from-containing-all-or-part-of-words-that-are-based-on-the-company-name-such-as-fab-fbr1kam-or-fabr-ensure-that-all-instances-of-webapp1-use-the-same-service-account-the-password-of-the-service-account-must-change-automatically-every-30-days-prevent-domain-controllers-from-directly-contacting-hosts-on-the-internet-you-need-to-configure-the-synchronization-of-azure-files-to-meet-the-following-requirements-ensure-that-seattlefiles-syncs-to-fs2-ensure-that-newyorkfiles-syncs-to-fs1-ensure-that-companyfiles-syncs-to-both-fs1-and-fs2-which-three-actions-should-you-perform-in-sequence-to-meet-the-security-requirements-for-webapp1)
 | 20  | [Contoso, Ltd. is a company that has a main office in Seattle and two branch offices in Los Angeles and Montreal. The network contains an on premises Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains two domains named contoso.com and canada.contoso.com. The forest contains the domain controllers shown in the following table. All the domain controllers are global catalog servers. The network contains the servers shown in the following table. A server named Server4 runs Windows Server and is in a workgroup. Windows Firewall on Server4 uses the private profile. Server2 hosts three virtual machines named VM1, VM2, and VM3. VM3 is a file server that stores data in the volumes shown in the following table. The contoso.com domain has the Group Policies Objects (GPOs) shown in the following table. The forest contains the users shown in the following table. The forest contains the groups shown in the following table. When an administrator signs in to the console of VM2 by using Virtual Machine Connection, and then disconnects from the session without signing out, another administrator can connect to the console session as the currently signed in user. Contoso identifies the following technical requirements: Change the replication schedule for all site links to 30 minutes. Promote Server1 to a domain controller in canada.contoso.com. Install and authorize Server3 as a DHCP server. Ensure that User1 can manage the membership of all the groups in Contoso\OU3. Ensure that you can manage Server4 from Server1 by using PowerShell remoting. Ensure that you can run virtual machines on VM1. Force users to provide credentials when they connect to VM2. On VM3, ensure that Data Deduplication on all volumes is possible. You need to meet the technical requirements for Server4. Which cmdlets should you run on Server1 and Server4?](#contoso-ltd-is-a-company-that-has-a-main-office-in-seattle-and-two-branch-offices-in-los-angeles-and-montreal-the-network-contains-an-on-premises-active-directory-domain-services-ad-ds-forest-named-contosocom-the-forest-contains-two-domains-named-contosocom-and-canadacontosocom-the-forest-contains-the-domain-controllers-shown-in-the-following-table-all-the-domain-controllers-are-global-catalog-servers-the-network-contains-the-servers-shown-in-the-following-table-a-server-named-server4-runs-windows-server-and-is-in-a-workgroup-windows-firewall-on-server4-uses-the-private-profile-server2-hosts-three-virtual-machines-named-vm1-vm2-and-vm3-vm3-is-a-file-server-that-stores-data-in-the-volumes-shown-in-the-following-table-the-contosocom-domain-has-the-group-policies-objects-gpos-shown-in-the-following-table-the-forest-contains-the-users-shown-in-the-following-table-the-forest-contains-the-groups-shown-in-the-following-table-when-an-administrator-signs-in-to-the-console-of-vm2-by-using-virtual-machine-connection-and-then-disconnects-from-the-session-without-signing-out-another-administrator-can-connect-to-the-console-session-as-the-currently-signed-in-user-contoso-identifies-the-following-technical-requirements-change-the-replication-schedule-for-all-site-links-to-30-minutes-promote-server1-to-a-domain-controller-in-canadacontosocom-install-and-authorize-server3-as-a-dhcp-server-ensure-that-user1-can-manage-the-membership-of-all-the-groups-in-contoso%5Cou3-ensure-that-you-can-manage-server4-from-server1-by-using-powershell-remoting-ensure-that-you-can-run-virtual-machines-on-vm1-force-users-to-provide-credentials-when-they-connect-to-vm2-on-vm3-ensure-that-data-deduplication-on-all-volumes-is-possible-you-need-to-meet-the-technical-requirements-for-server4-which-cmdlets-should-you-run-on-server1-and-server4)
 | 21  | [You have a file server named Server1 that runs Windows Server and contains the volumes shown in the following table. On which volumes can you use BitLocker Drive Encryption (BitLocker) and disk quotas?](#you-have-a-file-server-named-server1-that-runs-windows-server-and-contains-the-volumes-shown-in-the-following-table-on-which-volumes-can-you-use-bitlocker-drive-encryption-bitlocker-and-disk-quotas)
-| 22  | [Fabrikam, Inc is a manufacturing company that has a main office in New York and a branch office in Seattle. The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. VM1 and VM2 are connected to the internet. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP1 contains a scope named Scope1 that has addresses for the New York office, DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. The network contains a single on-premises Active Directory Domain Services (AD DS) domain named corp.falbrikam.com. Currently, all the service accounts use individual domain user accounts. All domain controllers have the DNS Server role installed and host a copy of the Active Directory integrated DNS zone of corp.fabrikam.com. The corp.fabrikam.com AD DS domain syncs with an Azure Active Directory (Azure AD) tenant. The corp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Fabrikam identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and FxpressRoute. Both on premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattlefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam.com in Vnet1. Deploy an Azure Virtual Desktop host pool to Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD-joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Fabrikam identifies the following networking requirements: Implement Virtual WAN and ensure that all the network traffic between the sites uses Virtual WAN. All communications must occur over ExpressRoute. If a DHCP server fails, ensure that the client computers can continue to receive their dynamic IP address and renew their existing lease. Ensure that the resources in Vnet1 can resolve the names of the on-premises servers in the corp.fabrikam.com domain. Fabrikam identifies the following security requirements: Apply GPO4 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout time manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab, f@br1kAm or fabr!|. Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. You need to configure the Group Policy settings to ensure that the Azure Virtual Desktop session hosts meet the security requirements. What should you configure?](#fabrikam-inc-is-a-manufacturing-company-that-has-a-main-office-in-new-york-and-a-branch-office-in-seattle-the-on-premises-network-contains-servers-that-run-windows-server-as-shown-in-the-following-table-dc1-hosts-all-the-operation-master-roles-vm1-and-vm2-are-connected-to-the-internet-web1-and-web2-run-an-internet-information-services-iis-web-app-named-webapp1-the-new-york-and-seattle-offices-are-connected-by-using-redundant-wan-links-the-client-computers-in-each-office-get-ip-addresses-from-their-local-dhcp-server-dhcp1-contains-a-scope-named-scope1-that-has-addresses-for-the-new-york-office-dhcp2-contains-a-scope-named-scope2-that-has-addresses-for-the-seattle-office-the-network-contains-a-single-on-premises-active-directory-domain-services-ad-ds-domain-named-corpfalbrikamcom-currently-all-the-service-accounts-use-individual-domain-user-accounts-all-domain-controllers-have-the-dns-server-role-installed-and-host-a-copy-of-the-active-directory-integrated-dns-zone-of-corpfabrikamcom-the-corpfabrikamcom-ad-ds-domain-syncs-with-an-azure-active-directory-azure-ad-tenant-the-corpfabrikamcom-domain-contains-the-organizational-units-ous-and-custom-group-policy-objects-gpos-shown-in-the-following-table-fabrikam-identifies-the-following-planned-changes-create-a-single-azure-subscription-named-sub1-that-will-contain-a-single-azure-virtual-network-named-vnet1-replace-the-wan-links-between-the-seattle-and-new-york-offices-by-using-azure-virtual-wan-and-fxpressroute-both-on-premises-offices-will-be-connected-to-vnet1-by-using-expressroute-create-three-azure-file-shares-named-newyorkfiles-seattlefiles-and-companyfiles-create-a-domain-controller-named-dc3corpfabrikamcom-in-vnet1-deploy-an-azure-virtual-desktop-host-pool-to-vnet1-the-azure-virtual-desktop-session-hosts-will-be-hybrid-azure-ad-joined-license-all-servers-for-microsoft-defender-for-servers-use-azure-policy-to-enforce-configuration-management-policies-on-the-servers-in-azure-and-on-premises-fabrikam-identifies-the-following-networking-requirements-implement-virtual-wan-and-ensure-that-all-the-network-traffic-between-the-sites-uses-virtual-wan-all-communications-must-occur-over-expressroute-if-a-dhcp-server-fails-ensure-that-the-client-computers-can-continue-to-receive-their-dynamic-ip-address-and-renew-their-existing-lease-ensure-that-the-resources-in-vnet1-can-resolve-the-names-of-the-on-premises-servers-in-the-corpfabrikamcom-domain-fabrikam-identifies-the-following-security-requirements-apply-gpo4-to-the-azure-virtual-desktop-session-hosts-ensure-that-azure-virtual-desktop-user-sessions-lock-after-being-idle-for-10-minutes-users-must-be-able-to-control-the-lockout-time-manually-from-their-client-computer-ensure-that-server-administrators-request-approval-before-they-can-establish-a-remote-desktop-connection-to-an-azure-virtual-machine-if-the-request-is-approved-the-connection-must-be-established-within-two-hours-prevent-user-passwords-from-containing-all-or-part-of-words-that-are-based-on-the-company-name-such-as-fab-fbr1kam-or-fabr-ensure-that-all-instances-of-webapp1-use-the-same-service-account-the-password-of-the-service-account-must-change-automatically-every-30-days-prevent-domain-controllers-from-directly-contacting-hosts-on-the-internet-you-need-to-configure-the-synchronization-of-azure-files-to-meet-the-following-requirements-ensure-that-seattlefiles-syncs-to-fs2-ensure-that-newyorkfiles-syncs-to-fs1-ensure-that-companyfiles-syncs-to-both-fs1-and-fs2-you-need-to-configure-the-group-policy-settings-to-ensure-that-the-azure-virtual-desktop-session-hosts-meet-the-security-requirements-what-should-you-configure)
+| 22  | [You need to configure the Group Policy settings to ensure that the Azure Virtual Desktop session hosts meet the security requirements. What should you configure?](#you-need-to-configure-the-group-policy-settings-to-ensure-that-the-azure-virtual-desktop-session-hosts-meet-the-security-requirements-what-should-you-configure)
 | 23  | [You have two on-premises servers named Server1 and Servet2 that run Windows Server. You have an Azure Storage account named storage1 that contains a file share named share. Server1 syncs with share1 by using Azure File Sync You need to configure Server2 to sync with share1. Which three actions should you perform in sequence?](#you-have-two-on-premises-servers-named-server1-and-servet2-that-run-windows-server-you-have-an-azure-storage-account-named-storage1-that-contains-a-file-share-named-share-server1-syncs-with-share1-by-using-azure-file-sync-you-need-to-configure-server2-to-sync-with-share1-which-three-actions-should-you-perform-in-sequence)
 | 24  | [Which groups can you add to Group3 and Group5?](#which-groups-can-you-add-to-group3-and-group5)
 | 25  | [You have five tile servers that run Windows Server. You need to block users from uploading video files that have the .mov extension to shared folders on the file servers. All other types of files must be allowed. The solution must minimize administrative effort. What should you create?](#you-have-five-tile-servers-that-run-windows-server-you-need-to-block-users-from-uploading-video-files-that-have-the-mov-extension-to-shared-folders-on-the-file-servers-all-other-types-of-files-must-be-allowed-the-solution-must-minimize-administrative-effort-what-should-you-create)
@@ -50,6 +50,10 @@
 | 44  | [You need to sync files from an on-premises server named Server1 to Azure by using Azure File Sync. You have a cloud tiering policy that is configured for 30 percent free space and 70 days. Volume f on Server1 is 500 GB. A year ago. you configured E:Oata on Server1 to sync by using Azure File Sync.  The files that are visible in E:Data are shown in the following table. Volume E does NOT contain any other files. Where are File1 and flle3 located?](#you-need-to-sync-files-from-an-on-premises-server-named-server1-to-azure-by-using-azure-file-sync-you-have-a-cloud-tiering-policy-that-is-configured-for-30-percent-free-space-and-70-days-volume-f-on-server1-is-500-gb-a-year-ago-you-configured-eoata-on-server1-to-sync-by-using-azure-file-sync--the-files-that-are-visible-in-edata-are-shown-in-the-following-table-volume-e-does-not-contain-any-other-files-where-are-file1-and-flle3-located)
 | 45  | [Fabrikam, Inc is a manufacturing company that has a main office in New York and a branch office in Seattle. The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. VM1 and VM2 are connected to the internet. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP1 contains a scope named Scope1 that has addresses for the New York office, DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. The network contains a single on-premises Active Directory Domain Services (AD DS) domain named corp.falbrikam.com. Currently, all the service accounts use individual domain user accounts. All domain controllers have the DNS Server role installed and host a copy of the Active Directory integrated DNS zone of corp.fabrikam.com. The corp.fabrikam.com AD DS domain syncs with an Azure Active Directory (Azure AD) tenant. The corp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Fabrikam identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and FxpressRoute. Both on premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattlefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam.com in Vnet1. Deploy an Azure Virtual Desktop host pool to Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD-joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Fabrikam identifies the following networking requirements: Implement Virtual WAN and ensure that all the network traffic between the sites uses Virtual WAN. All communications must occur over ExpressRoute. If a DHCP server fails, ensure that the client computers can continue to receive their dynamic IP address and renew their existing lease. Ensure that the resources in Vnet1 can resolve the names of the on-premises servers in the corp.fabrikam.com domain. Fabrikam identifies the following security requirements: Apply GPO4 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout time manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab, f@br1kAm or fabr!|. Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. You need to configure network communication between the Seattle and New York offices. The solution must meet the networking requirements. What should you configure?](#fabrikam-inc-is-a-manufacturing-company-that-has-a-main-office-in-new-york-and-a-branch-office-in-seattle-the-on-premises-network-contains-servers-that-run-windows-server-as-shown-in-the-following-table-dc1-hosts-all-the-operation-master-roles-vm1-and-vm2-are-connected-to-the-internet-web1-and-web2-run-an-internet-information-services-iis-web-app-named-webapp1-the-new-york-and-seattle-offices-are-connected-by-using-redundant-wan-links-the-client-computers-in-each-office-get-ip-addresses-from-their-local-dhcp-server-dhcp1-contains-a-scope-named-scope1-that-has-addresses-for-the-new-york-office-dhcp2-contains-a-scope-named-scope2-that-has-addresses-for-the-seattle-office-the-network-contains-a-single-on-premises-active-directory-domain-services-ad-ds-domain-named-corpfalbrikamcom-currently-all-the-service-accounts-use-individual-domain-user-accounts-all-domain-controllers-have-the-dns-server-role-installed-and-host-a-copy-of-the-active-directory-integrated-dns-zone-of-corpfabrikamcom-the-corpfabrikamcom-ad-ds-domain-syncs-with-an-azure-active-directory-azure-ad-tenant-the-corpfabrikamcom-domain-contains-the-organizational-units-ous-and-custom-group-policy-objects-gpos-shown-in-the-following-table-fabrikam-identifies-the-following-planned-changes-create-a-single-azure-subscription-named-sub1-that-will-contain-a-single-azure-virtual-network-named-vnet1-replace-the-wan-links-between-the-seattle-and-new-york-offices-by-using-azure-virtual-wan-and-fxpressroute-both-on-premises-offices-will-be-connected-to-vnet1-by-using-expressroute-create-three-azure-file-shares-named-newyorkfiles-seattlefiles-and-companyfiles-create-a-domain-controller-named-dc3corpfabrikamcom-in-vnet1-deploy-an-azure-virtual-desktop-host-pool-to-vnet1-the-azure-virtual-desktop-session-hosts-will-be-hybrid-azure-ad-joined-license-all-servers-for-microsoft-defender-for-servers-use-azure-policy-to-enforce-configuration-management-policies-on-the-servers-in-azure-and-on-premises-fabrikam-identifies-the-following-networking-requirements-implement-virtual-wan-and-ensure-that-all-the-network-traffic-between-the-sites-uses-virtual-wan-all-communications-must-occur-over-expressroute-if-a-dhcp-server-fails-ensure-that-the-client-computers-can-continue-to-receive-their-dynamic-ip-address-and-renew-their-existing-lease-ensure-that-the-resources-in-vnet1-can-resolve-the-names-of-the-on-premises-servers-in-the-corpfabrikamcom-domain-fabrikam-identifies-the-following-security-requirements-apply-gpo4-to-the-azure-virtual-desktop-session-hosts-ensure-that-azure-virtual-desktop-user-sessions-lock-after-being-idle-for-10-minutes-users-must-be-able-to-control-the-lockout-time-manually-from-their-client-computer-ensure-that-server-administrators-request-approval-before-they-can-establish-a-remote-desktop-connection-to-an-azure-virtual-machine-if-the-request-is-approved-the-connection-must-be-established-within-two-hours-prevent-user-passwords-from-containing-all-or-part-of-words-that-are-based-on-the-company-name-such-as-fab-fbr1kam-or-fabr-ensure-that-all-instances-of-webapp1-use-the-same-service-account-the-password-of-the-service-account-must-change-automatically-every-30-days-prevent-domain-controllers-from-directly-contacting-hosts-on-the-internet-you-need-to-configure-the-synchronization-of-azure-files-to-meet-the-following-requirements-ensure-that-seattlefiles-syncs-to-fs2-ensure-that-newyorkfiles-syncs-to-fs1-ensure-that-companyfiles-syncs-to-both-fs1-and-fs2-you-need-to-configure-network-communication-between-the-seattle-and-new-york-offices-the-solution-must-meet-the-networking-requirements-what-should-you-configure)
 | 46  | [You have an on-premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. The on-premises network is connected to Azure by using a Site-to-Site VPN. You have the DNS zones shown in the following table. You need to ensure that names from fabrikam.com can be resolved from the on-premises network. Which two actions should you perform?](#you-have-an-on-premises-active-directory-domain-services-ad-ds-domain-that-syncs-with-an-azure-active-directory-azure-ad-tenant-the-on-premises-network-is-connected-to-azure-by-using-a-site-to-site-vpn-you-have-the-dns-zones-shown-in-the-following-table-you-need-to-ensure-that-names-from-fabrikamcom-can-be-resolved-from-the-on-premises-network-which-two-actions-should-you-perform)
+
+----------------------------------------------------------------------------------------------
+
+From here there is no update to the table of content ----->>>> After line 600!
 
 ### You have a server named Server1 that runs Windows Server. Server1 has the storage pools shown in the following table. You plan to create a virtual disk named VDisk1 that will use storage tiers.
 
@@ -225,7 +229,7 @@
 ![Question 16 part 1](images/question7_16_17_19_22_29_45_1.jpg)
 ![Question 16 part 2](images/question7_16_17_19_22_29_45_2.jpg)
 
-- [ ] Azure Active Directory Domain Services (Azure AD DS}.
+- [ ] Azure Active Directory Domain Services (Azure AD DS).
 - [ ] Azure AD Application Proxy.
 - [x] Azure virtual machine.
 - [ ] Azure AD administrative unit.
@@ -248,9 +252,9 @@
 ### You have an Azure virtual machine named VM1 that runs Windows Server. You perform the following actions on VM1: Create a folder named Folder1 on volume C. Create a folder named Folder2 on volume D. Add a new data disk to VM1 and create a new volume that is assigned drive letter E. Install an app named App1 on volume E. You plan to resize VM1. Which objects will present after you resize VM1?
 
 - [ ] Folder1 and Folder2 only.
-- [x] Folder1, volume E, and App1 only.
+- [ ] Folder1, volume E, and App1 only.
 - [ ] Folder1 only.
-- [ ] Folder1, Folder2, App1, and volume E.
+- [x] Folder1, Folder2, App1, and volume E.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -279,8 +283,8 @@
 
 - [ ] Server1: Enable-ServerManagerStandardUserRemoting. Server4: Enable-PSRemoting.
 - [ ] Server1: Enable-PSRemoting. Server4: Enable-ServerManagerStandardUserRemoting.
-- [x] Server1: Set-Item. Server4: Enable-PSRemoting.
-- [ ] Server1: Start-Service. Server4: Enable-PSRemoting.
+- [ ] Server1: Set-Item. Server4: Enable-PSRemoting.
+- [x] Server1: Start-Service. Server4: Enable-PSRemoting.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -296,7 +300,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Fabrikam, Inc is a manufacturing company that has a main office in New York and a branch office in Seattle. The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. VM1 and VM2 are connected to the internet. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP1 contains a scope named Scope1 that has addresses for the New York office, DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. The network contains a single on-premises Active Directory Domain Services (AD DS) domain named corp.falbrikam.com. Currently, all the service accounts use individual domain user accounts. All domain controllers have the DNS Server role installed and host a copy of the Active Directory integrated DNS zone of corp.fabrikam.com. The corp.fabrikam.com AD DS domain syncs with an Azure Active Directory (Azure AD) tenant. The corp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Fabrikam identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and FxpressRoute. Both on premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattlefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam.com in Vnet1. Deploy an Azure Virtual Desktop host pool to Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD-joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Fabrikam identifies the following networking requirements: Implement Virtual WAN and ensure that all the network traffic between the sites uses Virtual WAN. All communications must occur over ExpressRoute. If a DHCP server fails, ensure that the client computers can continue to receive their dynamic IP address and renew their existing lease. Ensure that the resources in Vnet1 can resolve the names of the on-premises servers in the corp.fabrikam.com domain. Fabrikam identifies the following security requirements: Apply GPO4 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout time manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab, f@br1kAm or fabr!|. Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. You need to configure the Group Policy settings to ensure that the Azure Virtual Desktop session hosts meet the security requirements. What should you configure?
+###  You need to configure the Group Policy settings to ensure that the Azure Virtual Desktop session hosts meet the security requirements. What should you configure?
 
 ![Question 22 part 1](images/question7_16_17_19_22_29_45_1.jpg)
 ![Question 22 part 2](images/question7_16_17_19_22_29_45_2.jpg)
@@ -592,5 +596,265 @@
 - [ ] Create a secondary zone for fabrikam.com on DC1.
 - [ ] Deploy an Azure virtual machine that runs Windows Server. Modify the DNS Servers settings for the virtual network.
 - [x] Deploy an Azure virtual machine that runs Windows Server. Configure the virtual machine as a DNS forwarder.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an Active Directory Domain Services (AD DS) domain. The domain contains the domain controllers shown in the following table. You need to configure DC3 to be the authoritative time server for the domain. Which operations master role should you transfer to DC3, and which console should you use?
+
+![Question 47](images/question47.png)
+
+Role:
+- [ ] Domain master
+- [ ] Infrastructure master
+- [x] PCD emulator
+- [ ] RID master
+- [ ] Schema master
+
+Console:
+- [ ] Active Directory Admin
+- [ ] Active Directory Domain 
+- [ ] Active Directory Sites and Services
+- [x] Active Directory Users and Computers
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an on premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. The domain contains two servers named Server1 and Server2. A user named Admin1 is a member of the local Administrators group on Server1 and Server2. You plan to manage Server1 and Server2 by using Azure Arc. Azure Arc objects will be added to a resource group named RG1. You need to ensure that Admin1 can configure Server1 and Server2 to be managed by using Azure Arc. What should you do first?
+
+- [ ] From the Azure portal, generate a new onboarding script.
+- [x] Assign Admin1 the Azure Connected Machine Onboarding role for RG1.
+- [ ] Hybrid Azure AD join Server1 and Server2.
+- [ ] Create an Azure cloud-only account for Admin1.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three Active Directory sites named Site1, Site2, and Site3. Each site contains two domain controllers. The sites are connected by using DEFAULTIPSITELINK. You open a new branch office that contains only client computers. You need to ensure that the client computers in the new office are primarily authenticated by the domain controllers in Site1. Solution: You create a new subnet object that is associated to Site1. Does this meet the goal?
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure virtual machine named VM1 that runs Windows Server and has the following configurations: ✑ Size: D2s_v4 ✑ Operating system disk: 127-GiB standard SSD ✑ Data disk 128-GiB standard SSD ✑ Virtual machine generation: Gen 2 You plan to perform the following changes to VM1: ✑ Change the virtual machine size to D4s_v4. ✑ Detach the data disk. ✑ Add a new standard SSD. Which changes require downtime for VM1?
+
+- [ ] Detaching the data disk only and adding a new standard SSD.
+- [ ] Detaching the data disk only.
+- [x] Changing the virtual machine size only.
+- [ ] Adding a new standard SSD only.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains two servers named Server1 and Server2. Server1 contains a disk named Disk2. Disk2 contains a folder named UserData. UserData is shared to the Domain Users group. Disk2 is configured for deduplication. Server1 is protected by using Azure Backup. Server1 fails. You connect Disk2 to Server2. You need to ensure that you can access all the files on Disk2 as quickly as possible. What should you do?
+
+- [ ] Create a storage pool.
+- [ ] Restore files from Azure Backup.
+- [ ] Install the File Server Resource Manager server role.
+- [x] Install the Data Deduplication server role.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. You need to identify which server is the PDC emulator for the domain. Solution: From a command prompt, you run netdom.exe query fsmo. Does this meet the goal?
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure virtual machine named Server1 that runs a network management application. Server1 has the following network configuration. * Network interface.Nic1 * IP address 10.1.1.1/24 * Connected to: Vnet1/Subnet1 You need connect Server1 to an additional subnet named Vnet1/Subnet2. What should you do?
+
+- [x] Create a private endpoint on Subnet2
+- [ ] Add a network interface to server1.
+- [ ] Modify the IP configurations of Nic1.
+- [ ] Add an IP configuration to Nic1.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains a two-domain on-premises Active Directory Domain Services (AD DS) forest named Contoso.com. The forest contains the domain controllers shown in the following table. You create an Active Directory site named Site3. Site1, Site2 and Site3 each has a dedicated site link to the Hub site. In Site3, you install a new server named Server1. You need to promote Server1 to an ROOC in child.contoso.com by using the install from Media (IFM) option. The solution must minimize network traffic. What should you do?
+
+![Question 48](images/question48.png)
+
+Server to use to create the IFM source: 
+- [x] DC1
+- [ ] DC2
+- [ ] Server1
+- [ ] RODC3
+
+Tool to use to create the IFM source:
+- [ ] Azure Backup
+- [x] Dcdiag.exe
+- [ ] Ntdsutil.exe
+- [ ] Repadmin.exe
+- [ ] Windows Server Backup
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have a server named Server1 that runs Windows Server and contains three volumes named C, D, and E. Files are stored on Server1 as shown in the following table. For volume D, Data Deduplication is enabled and set to General purpose file server. You perform the following actions: • Move File1 to volume D. • Copy File2 to volume D and name the copy File4. • Move File3 to volume E. For each of the following statements, select Yes if the statement is true. Otherwise, select No.
+
+![Question 49](images/question49.png)
+
+File1 is deduplicated after the deduplication job runs:
+- [ ] Yes.
+- [x] No.
+
+File3 is deduplicated after the deduplication job runs:
+- [ ] Yes.
+- [x] No.
+
+File4 is deduplicated after the deduplication job runs:
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains a virtual machine named VM1 as shown in the following exhibit. The subscription has the disks shown in the following table. Which disks can you attach as data disks to VM1?
+
+![Question 50 part 1](images/question50_1.jpg)
+![Question 50 part 2](images/question50_2.jpg)
+
+- [ ] Disk2 only
+- [ ] Disk4 only
+- [x] Disk1 and Disk2 only
+- [ ] Disk2 and Disk4 only
+- [ ] Disk1, Disk3, and Disk4 only
+- [ ] Disk1, Disk2, Disk3. and Disk4
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an Active Directory Domain Services (AD DS) forest named contoso.com. The root domain contains the domain controllers shown in the following table. A failure of which domain controller will prevent you from creating application partitions?
+
+![Question 51](images/question51.jpg)
+
+- [x] DC1
+- [ ] DC2
+- [ ] DC3
+- [ ] DC4
+- [ ] DC5
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You are planning the deployment of DNS to a new network. You have three internal DNS servers as shown in the following table. The contoso.local zone contains zone delegations for east.conloso.local and west.contoso.local. All the DNS servers use root hints. You need to ensure that all the DNS servers can resolve the names of all the internal namespaces and internet hosts. Solution: On Server2 and Server3, you configure a conditional forwarder for contoso.local. Does this meet the goal?
+
+![Question 52](images/question52.jpg)
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an on-premises server named Server1 that runs Windows Server. You have an Azure virtual network that contains an Azure virtual network gateway. You need to connect only Server1 to the Azure virtual network. What should you use?
+
+- [x] Azure Network Adapter
+- [ ] a Site-to-SiteVPN
+- [ ] an ExpressRoute circuit
+- [ ] Azure Extended Network
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an on -premises Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the objects shown in the following table. You plan to sync contoso.com with an Azure Active Directory (Azure AD) tenant by using Azure AD Connect. You need to ensure that all the objects can be used in Conditional Access policies. What should you do?
+
+![Question 53](images/question53.jpg)
+
+- [ ] Change the scope of Group2 to Universal
+- [ ] Clear the Configure device writeback option.
+- [ ] Change the scope o’ Group1 and Group2 to Global
+- [x] Select the Configure Hybrid Azure AD join option.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains a multi-site Active Directory Domain Services (AD DS) forest. Each Active Directory site is connected by using manually configured site links and automatically generated connections. You need to minimize the convergence time for changes to Active Directory. What should you do?
+
+- [ ] For each site link, modify the options attribute.
+- [ ] For each site link, modify the site link costs.
+- [x] For each site link, modify the replication schedule.
+- [ ] Create a site link bridge that contains all the site links.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company has a main office and a branch office. The two offices are connected by using a WAN link. Each office contains a firewall that filters WAN traffic. The network in the branch office contains 10 servers that run Windows Server. All servers are administered from the main office only. You plan to manage the servers in the branch office by using a Windows Admin Center gateway. On a server in the branch office, you install the Windows Admin Center gateway by using the defaults settings. You need to configure the firewall in the branch office to allow the required inbound connection to the Windows Admin Center gateway. Which inbound TCP port should you allow?
+
+- [x] 443
+- [ ] 3389
+- [ ] 5985
+- [ ] 6516
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains an Active Directory Domain Services (AD DS) domain- The domain contains 10 servers that run Windows Server. The servers have static IP addresses. You plan to use DHCP to assign IP addresses to the servers. You need to ensure that each server always receives the same IP address. Which type of identifier should you use to create a DHCP reservation for each server?
+
+- [ ] universally unique identifier (UUID)
+- [ ] fully qualified domain name (FQDN)
+- [ ] NetBIOS name
+- [x] MAC address
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure virtual machine named VM1 that has a private IP address only. You configure the Windows Admin Center extension on VM1. You have an on-premises computer that runs Windows 11. You use the computer for server management. You need to ensure that you can use Windows Admin Center from the Azure portal to manage VM1. What should you configure?
+
+- [ ] an Azure Bastion host on the virtual network that contains VM1.
+- [x] a VPN connection to the virtual network that contains VM1.
+- [ ] a network security group 1NSG) rule that allows inbound traffic on port 443.
+- [ ] a private endpoint on the virtual network that contains VM1.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have a server that runs Windows Server and has the DHCP Server role installed. The server has a scope named Scope! that has the following configurations: • Address range: 192.168.0.2 to 192.16B.1.2M. Mask 255.255.254.0 • Router: 192.168.0.1 • Lease duration: 3 days • DNS server 172.16.0.254 You have 50 Microsoft Teams Phone devices from the same vendor. All the devices have MAC addresses within the same range. You need to ensure that all the Teams Phone devices that receive a lease from Scope1 have IP addresses in the range of 192.168.1.100 to 192.168.1.200. The solution must NOT affect other DHCP clients that receive IP configurations from Scope1. What should you create?
+
+- [x] a policy
+- [ ] a scope
+- [ ] a fitter
+- [ ] scope options
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription that contains the following resources: • An Azure Log Analytics workspace • An Azure Automation account • Azure Arc. You have an on-premises server named Server1 that is onboaraed to Azure Arc You need to manage Microsoft updates on Server! by using Azure Arc Which two actions should you perform? Each correct answer presents part of the solution.
+
+- [ ] Add Microsoft Sentinel to the Log Analytics workspace
+- [x] On Server1, install the Azure Monitor agent
+- [x] From the Automation account, enable Update Management for Server1.
+- [ ] From the Virtual machines data source of the Log Analytics workspace, connect Server1.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your network contains two VLANs for client computers and one VLAN for a datacenter Each VLAN is assigned an IPv4 subnet Currently, all the client computers use static IP addresses. You plan to deploy a DHCP server to the VLAN in the datacenter. You need to use the DHCP server to provide IP configurations to all the client computers. What is the minimum number of scopes and DHCP relays you should create?
+
+![Question 54](images/question54.png)
+
+DHCP scopes: 
+- [ ] 1
+- [ ] 2
+- [x] 3
+- [ ] 4
+
+DHCP relays:
+- [x] 1
+- [ ] 2
+- [ ] 3 
+- [ ] 4 
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an on premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. You plan to implement self-service password reset (SSPR) in Azure AD. You need to ensure that users that reset their passwords by using SSPR can use the new password resources in the AD DS domain. What should you do?
+
+- [ ] Deploy the Azure AD Password Protection proxy service to the on premises network.
+- [x] Run the Microsoft Azure Active Directory Connect wizard and select Password writeback.
+- [ ] Grant the Change password permission for the domain to the Azure AD Connect service account.
+- [ ] Grant the impersonate a client after authentication user right to the Azure AD Connect service account.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure Active Directory Domain Services (Azure AD DS) domain named contoso.com. You need to provide an administrator with the ability to manage Group Policy Objects (GPOs). The solution must use the principle of least privilege. To which group should you add the administrator?
+
+- [ ] AAD DC Administrators
+- [x] Domain Admins
+- [ ] Schema Admins
+- [ ] Enterprise Admins
+- [ ] Group Policy Creator Owners
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have an Azure subscription named sub1 and 500 on-premises virtual machines that run Windows Server. You plan to onboard the on-premises virtual machines to Azure Arc by running the Azure Arc deployment script You need to create an identity that mil be used by the script to authenticate access to sub1. The solution must use the principle of least privilege. How should you complete the command?
+
+![Question 55](images/question55.jpg)
+
+- [ ] New-AzADAppCredential. - [x] New-AZADServicePrincipal. - [ ] New-AZUserAssignedIdentity. -DisplayName 'Arc-for-servers' -Role - [ ] Azure Connected Machine Onboarding. - [x] Virtual Machine Contributor. - [ ] Virtual Machine User Login.
 
 **[⬆ Back to Top](#table-of-contents)**
