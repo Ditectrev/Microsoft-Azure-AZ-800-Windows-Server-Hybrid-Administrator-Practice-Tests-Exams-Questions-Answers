@@ -858,3 +858,494 @@ DHCP relays:
 - [ ] New-AzADAppCredential. - [x] New-AZADServicePrincipal. - [ ] New-AZUserAssignedIdentity. -DisplayName 'Arc-for-servers' -Role - [ ] Azure Connected Machine Onboarding. - [x] Virtual Machine Contributor. - [ ] Virtual Machine User Login.
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### You have an on premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. You plan to implement self-service password reset (SSPR) in Azure AD.You need to ensure that users that reset their passwords by using SSPR can use the new password resources in the AD DS domain. What should you do?
+
+- [ ] Deploy the Azure AD Password Protection proxy service to the on premises network.
+- [x] Run the Microsoft Azure Active Directory Connect wizard and select Password writeback.
+- [ ] Grant the Change password permission for the domain to the Azure AD Connect service account.
+- [ ] Grant the impersonate a client after authentication user right to the Azure AD Connect service account.
+
+### You have an Azure Active Directory Domain Services (Azure AD DS) domain named contoso.com. You need to provide an administrator with the ability to manage Group Policy Objects (GPOs). The solution must use the principle of least privilege. To which group should you add the administrator?
+
+- [x] AAD DC Administrators.
+- [ ] Domain Admins.
+- [ ] Schema Admins.
+- [ ] Enterprise Admins.
+- [ ] Group Policy Creator Owners.
+
+
+### You create a new Azure subscription. You plan to deploy Azure Active Directory Domain Services (Azure AD DS) and Azure virtual machines. You need to ensure that the virtual machines can join to Azure AD DS. Which three actions should you perform in sequence?
+
+![Question 100](images/questio100.jpg)
+
+- [ ] Box 1: Modify the settings of the Azure virtual network. Box 2: Install the Active Direcotry Domain Services role. Box 3: Install Azure AD Connect.
+- [ ] Box 1: Install the Active Direcotry Domain Services role. Box 2: Install Azure AD Connect. Box 3: Install the Active Direcotry Domain Services role.
+- [x] Box 1: Create an Azure virtual network. Box 2: Create an Azure AD DS instance. Box 3: Modify the settings of the Azure virtual network.
+- [ ] Box 1: Create an Azure AD DS instance. Box 2: Run the Active Directory Domain Service installation Wizard. Box 3: Install Azure AD Connect.
+
+### You create a new Azure subscription. You plan to deploy Azure Active Directory Domain Services (Azure AD DS) and Azure virtual machines. You need to ensure that the virtual machines can join to Azure AD DS. Which three actions should you perform in sequence?
+
+![Question 100](images/questio100.jpg)
+
+- [ ] Box 1: Modify the settings of the Azure virtual network. Box 2: Install the Active Direcotry Domain Services role. Box 3: Install Azure AD Connect.
+- [ ] Box 1: Install the Active Direcotry Domain Services role. Box 2: Install Azure AD Connect. Box 3: Install the Active Direcotry Domain Services role.
+- [x] Box 1: Create an Azure virtual network. Box 2: Create an Azure AD DS instance. Box 3: Modify the settings of the Azure virtual network.
+- [ ] Box 1: Create an Azure AD DS instance. Box 2: Run the Active Directory Domain Service installation Wizard. Box 3: Install Azure AD Connect.
+
+### You have an Azure Active Directory Domain Services (Azure AD DS) domain. You create a new user named Admin1. You need Admin1 to deploy custom Group Policy settings to all the computers in the domain. The solution must use the principle of least privilege. What should you include in the solution? Add Admin1 to the following group:
+
+- [x] AAD DC Administrators.
+- [ ] Domain Admins.
+- [ ] Group Policy Creator Oweners.
+
+### You have an Azure Active Directory Domain Services (Azure AD DS) domain. You create a new user named Admin1. You need Admin1 to deploy custom Group Policy settings to all the computers in the domain. The solution must use the principle of least privilege. What should you include in the solution? Instruct Admin1 apply the custom Groupp Policy settings by:
+
+- [ ] Creating a new Group Policy Object (GPO) and linking the GPO to the domain.
+- [x] Modifying AADDC Compputers GPO.
+- [ ] Modifying the default domain GPO.
+
+### Your network contains a single domain Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains a single Active Directory site. You plan to deploy a read only domain controller (RODC) to a new datacenter on a server named Server1. A user named User1 is a member of the local Administrators group on Server1. You need to recommend a deployment plan that meets the following requirements: Ensures that a user named User1 can perform the RODC installation on Server1 Ensures that you can control the AD DS replication schedule to the Server1 Ensures that Server1 is in a new site named RemoteSite1Uses the principle of least privilege Which three actions should you recommend performing in sequence? 
+
+![Question 103](images/questio103.jpg)
+
+- [ ] Box 1:Instruct User1 to run the Active Directory Domain Services installation Wizard on Server Box 2: Create a site link. Box 3: Pre-create an RODOC account.
+- [x] Box 1: Create a site and a subnet. Box 2: Pre-create an RODOC account. Box 3: Instruct User1 to run the Active Directory Domain Services installation Wizard on Server1.
+- [ ] Box 1: Create a site link. Box 2: Pre-create an RODOC account. Box 3: Add User1 to the Contoso\Administstrators group.
+- [ ] Box 1: Pre-create an RODOC account. Box 2: Add User1 to the Contoso\Administstrators group. Box 3: Create a site and a subnet.
+
+### Your network contains a single domain Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains a single Active Directory site. You plan to deploy a read only domain controller (RODC) to a new datacenter on a server named Server1. A user named User1 is a member of the local Administrators group on Server1. You need to recommend a deployment plan that meets the following requirements: Ensures that a user named User1 can perform the RODC installation on Server1 Ensures that you can control the AD DS replication schedule to the Server1 Ensures that Server1 is in a new site named RemoteSite1Uses the principle of least privilege Which three actions should you recommend performing in sequence? 
+
+![Question 103](images/questio103.jpg)
+
+- [ ] Box 1:Instruct User1 to run the Active Directory Domain Services installation Wizard on Server Box 2: Create a site link. Box 3: Pre-create an RODOC account.
+- [x] Box 1: Create a site and a subnet. Box 2: Pre-create an RODOC account. Box 3: Instruct User1 to run the Active Directory Domain Services installation Wizard on Server1.
+- [ ] Box 1: Create a site link. Box 2: Pre-create an RODOC account. Box 3: Add User1 to the Contoso\Administstrators group.
+- [ ] Box 1: Pre-create an RODOC account. Box 2: Add User1 to the Contoso\Administstrators group. Box 3: Create a site and a subnet.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain. The network also contains 20 domain controllers, 100 member servers, and 100 client computers. You have a Group Policy Object (GPO) named GPO1 that contains Group Policy preferences. You plan to link GPO1 to the domain. You need to ensure that the preference in GPO1 apply only to domain member servers and NOT to domain controllers or client computers. All the other Group Policy settings in GPO1 must apply to all the computers. The solution must minimize administrative effort. Which type of item level targeting should you use?
+
+- [ ] Domain
+- [x] Operating System
+- [ ] Security Group
+- [ ] Environment Variable
+
+### Events from Windows event logs:
+
+- [ ] AzureActivity.
+- [ ] AzureDiagnostics.
+- [x] Event.
+- [ ] Syslog.
+
+### Key Vault ppermissions for the managed identity:
+
+- [ ] Keys: Gey.
+- [ ] Keys: List and Get.
+- [x] Secrets: Get.
+- [ ] Secrets: List and Get.
+
+### To provide access to virtual machines on VNET1, use: [...].
+
+- [ ] Azure Bastion.
+- [x] Just-in-time (JIT) VM access.
+- [ ] Azure Web Appplication Firewall (WAF) in Azure Front Doctor.
+
+### To enforce Azure MFA, use:
+
+- [ ] An Azure Identity Governance access package.
+- [x] A Conditional Access policy that has the Cloud apps assignment set to Azure Windows Vm Sing-In.
+- [ ] A Conditional Access ppolicy that has the Cloud apps assignment set to Microsoft Azure Management.
+
+### User1 can create a new virtual machine in RG1.
+
+- [x] Yes.
+- [ ] No.
+
+### Your network contains an Active Directory Domain Services (AD DS) forest named contoso.com. You create the resources shown in the following table.You create the Group Policy Objects (GPOs) shown in the following table. You configure the Group Policy Preferences shown in the following table. If User3 signs in to Comp1, a shortcut named Link2 will appear on the computer's desktop.
+
+- [ ] Yes.
+- [x] No.
+
+### You deploy a new Active Directory Domain Services (AD DS) forest named contoso.com. The domain contains three domain controllers named DC1, DC2, and DC3. You rename Default-First-Site-Name as Site1. You plan to ship DC1, DC2, and DC3 to datacenters in different locations. You need to configure replication between DC1, DC2, and DC3 to meet the following requirements: Each domain controller must reside in its own Active Directory site. The replication schedule between each site must be controlled independently. Interruptions to replication must be minimized. Which three actions should you perform in sequence in the Active Directory Sites and Services console?
+
+- [x] Create a connection object between DC1 and DC2.
+- [ ] Create an additional site link that contains Site1 and Site2.
+- [x] Create two additional sites named Site2 and Site3. Move DC2 to Site2 and DC3 to Site3.
+- [x] Create a connection object between DC2 and DC3.
+- [ ] Remove Site2 from DEFAULTIPSITELINK.
+
+### Your network contains an Active Directory Domain Services (AD DS) forest named contoso.com. The root domain contains the domain controllers shown in the following table. A failure of which domain controller will prevent you from creating application partitions?
+
+![Question 181](images/question181.png)
+
+- [x] DC1.
+- [ ] DC2.
+- [ ] DC3. 
+- [ ] DC4.
+- [ ] DC5.
+
+### Your network contains an on-premises Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the objects shown in the following table. You plan to sync contoso.com with an Azure Active Directory (Azure AD) tenant by using Azure AD Connect. You need to ensure that all the objects can be used in Conditional Access policies. What should you do?
+
+![Question 182](images/question182.jpg)
+
+- [x] Select the Configure Hybrid Azure AD join option.
+- [ ] Change the scope of Group1 and Group2 to Global.
+- [ ] Clear the Configure device writeback option.
+- [ ] Change the scope of Group2 to Universal.
+
+### You deploy a single-domain Active Directory Domain Services (AD DS) forest named contoso.com. You deploy five servers to the domain. You add the servers to a group named ITFarmHosts. You plan to configure a Network Load Balancing (NLB) cluster named NLBCluster.contoso.com that will contain the five servers.You need to ensure that the NLB service on the nodes of the cluster can use a group managed service account (gMSA) to authenticate. Which three PowerShell cmdlets should you run in sequence? 
+
+![Question 184](images/question184.jpg)
+
+- [x] Box 1: Add-KdsRootKey Box 2: New-ADServiceAccount Box 2: Install-ADServiceAccoun.
+- [ ] Box 1: Add-ADComputerServiceAccount Box 2: Add-KdsRootKey Box 3: New-ADServiceAccount.
+- [ ] Box 1: Install-ADServiceAccount Box 2: Set-KdsConfiguration Box 3: Add-KdsRootKey.
+- [ ] Box 1: New-ADServiceAccount Box 2: Add-ADComputerServiceAccount Box 3: Add-KdsRootKey.
+
+### Your network contains three Active Directory Domain Services (AD DS) forests as shown in the following exhibit. The network contains the users shown in the following table. The network contains the security groups shown in the following table. You can add User2 to Group3 [...].
+
+- [ ] Yes.
+- [x] No.
+
+### Your network contains three Active Directory Domain Services (AD DS) forests as shown in the following exhibit. The network contains the users shown in the following table. The network contains the security groups shown in the following table.You can grant Group2 permissions to the resources in the fabrikam.com domain [...].
+
+- [x] Yes.
+- [ ] No.
+
+### Your network contains an Active Directory Domain Services (AD DS) forest named contoso.com. The forest root domain contains a server named server1.contoso.com. A two-way forest trust exists between the contoso.com forest and an AD DS forest named fabrikam.com. The fabrikam.com forest contains 10 child domains. You need to ensure that only the members of a group named fabrikam\Group1 can authenticate to server1.contoso.com. What should you do first?
+
+- [ ] Add fabrikam\Group1 to the local Users group on server1.contoso.com.
+- [ ] Enable SID filtering for the trust.
+- [x] Enable Selective authentication for the trust.
+- [ ] Change the trust to a one-way external trust.
+
+### Your network contains an Active Directory forest. The forest contains two domains named contoso.com and east.contoso.com and the servers shown in the following table. Contoso.com contains a user named User1. You add User1 to the built-in Backup Operators group in contoso.com. Which servers can User1 back up?
+
+![Question 186](images/question186.jpg)
+
+- [x] DC1 only.
+- [ ] Server1 only.
+- [ ] DC1 and DC2 only.
+- [ ] DC1 and Server1 only.
+- [ ] DC1, DC2, Server1, and Server2.
+
+### Your network contains an Azure Active Directory Domain Services (Azure AD DS) domain named contoso.com. You need to configure a password policy for the local user accounts on the Azure virtual machines joined to contoso.com. What should you do? Sign in by using a user account that is a member of the[...]:
+
+- [x] AAD DC Administrators group.
+- [ ] Administrators group.
+- [ ] Domain Admins group.
+
+### You need to configure a Group Policy preference to ensure that users in the organizational unit (OU) named Server Admins have a shortcut to a folder named \\srv1.contoso.com\data on their desktop when they sign in to the computers in the domain. To complete this task, sign in the required computer or computers.
+
+- [x] Create Desktop Shortcuts on Domain Computers via GPO Step 1: Open the Group Policy Management Console (gpmc.msc). Step 2: Right-click an AD container (Organizational Unit) you want to apply a shortcut creation policy. In this case, right-click on the OU Server Admins. Step 3: Select Create a GPO in this domain, and Link it here.. Step 4: Go to the Group Policy Preferences section: User Configuration -> Preferences -> Windows Settings -> Shortcuts. Click it and select New -> Shortcut.Step 5: Create a new shortcut item with the following settings: Name: Something Target Type: File System Object (you can select a URL or a Shell object here) Location: Desktop Target Path: \\\\srv1.contoso.com\\data
+srv1.contoso.com
+
+### You plan to promote a domain controller named DC3 in a site in Seattle. You need to ensure that DC3 only replicates with DC1 and DC2 between 8 PM and 6 AM. To complete this task, sign in the required computer or computers.
+
+- [x] Step 1: Create a site link between Seattle and the site in which DC1 and DC2 are located (if the site link does not already exist. If the site link already exists, then skip Step 1). Step 2: To open Active Directory Sites and Services, click Start, click Administrative Tools, and then click Active Directory Sites and Services. Step 3: In the console tree, click the intersite transport folder that contains the site link for which you are configuring intersite replication availability. Step 4: In the details pane, right-click the site link whose schedule you want to configure, and then click Properties. Step 5: Click Change Schedule. Step 6: Select the block of time during which you want replication to be either available or not available, and then click Replication Not Available or Replication Available, respectively. Change the schedule to: from 8 PM to 6 AM.
+
+### You need to ensure that DC2 is the schema master for contoso.com. To complete this task, sign in the required computer or computers.
+
+-[x] Seize operations master roles You cannot use AD DS snap-ins to seize operations master roles. Instead, you must use either the ntdsutil.execommand-line tool or Windows PowerShell to seize roles. To seize or transfer the FSMO roles by using the Ntdsutil utility, follow these steps: Step 1: Sign in to a member computer, in our case DC2, that has the AD RSAT tools installed, or a DC that is located in the forest where FSMO roles are being transferred. Step 2: Select Start > Run, type ntdsutil in the Open box, and then select OK. Step 3: Type roles, and then press Enter. Note: To see a list of available commands at any one of the prompts in the Ntdsutil utility, type ?, and then press Enter. Step 4: Type connections, and then press Enter. Step 5: Type connect to server <servername>, and then press Enter. Step 6: At the server connections prompt, type q, and then press Enter. Step 7: To seize the role: Type seize <role>, and then press Enter. In our case we type: seize schema master. Step 8: At the fsmo maintenance prompt, type q, and then press Enter to gain access to the ntdsutil prompt. Type q, and then press Enter to quit the Ntdsutil utility.
+
+### Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three domains. Each domain contains 10 domain controllers. You plan to store a DNS zone in a custom Active Directory partition. You need to create the Active Directory partition for the zone. The partition must replicate to only four of the domain controllers. What should you use?
+
+- [ ] Windows Admin Center.
+- [ ] DNS Manager.
+- [ ] Active Directory Sites and Services.
+- [x] ntdsutil.exe.
+
+### You need to provide users in the contoso.com forest with access to the resources in the fabrikam.com forest. The solution must meet the following requirements: Users in contoso.com must only be added directly to groups in the contoso.com forest. Permissions to access the resources in fabrikam.com must only be granted directly to groups in the fabrikam.com forest. The number of groups must be minimized. Which type of groups should you use to organize the users and to assign permissions? Organize users:
+
+- [x] Domain global.
+- [ ] Domain local.
+- [ ] Universal.
+
+### You need to provide users in the contoso.com forest with access to the resources in the fabrikam.com forest. The solution must meet the following requirements: Users in contoso.com must only be added directly to groups in the contoso.com forest. Permissions to access the resources in fabrikam.com must only be granted directly to groups in the fabrikam.com forest. The number of groups must be minimized. Which type of groups should you use to organize the users and to assign permissions? Assign permissions:
+
+- [ ] Domain global.
+- [x] Domain local.
+- [ ] Universal.
+
+### Your network contains two Active Directory forests and a domain trust as shown in the following exhibit. The domain trust has the following configurations: Name: adatum.co Type: External Direction: One-way, outgoing Outgoing trust authentication level: Domain-wide authentication The forests contain the users shown in the following table. The forests contain the network shares shown in the following table. User1 can be assigned permissions for Share3.
+
+![Question 211](images/question211_212_213_1.png)
+![Question 211](images/question211_212_213_2.png)
+![Question 211](images/question211_212_213_3.png)
+
+- [x] Yes.
+- [ ] No.
+
+### Your network contains two Active Directory forests and a domain trust as shown in the following exhibit. The domain trust has the following configurations: Name: adatum.co Type: External Direction: One-way, outgoing Outgoing trust authentication level: Domain-wide authentication The forests contain the users shown in the following table. The forests contain the network shares shown in the following table. User2 can be assigned permissions for Share1.
+
+- [ ] Yes.
+- [x] No.
+
+### Your network contains two Active  irectory forests and a domain trust as shown in the following exhibit. The domain trust has the following configurations: Name: adatum.co Type: External Direction: One-way, outgoing Outgoing trust authentication level: Domain-wide authentication The forests contain the users shown in the following table. The forests contain the network shares shown in the following table. User3 can be assigned permissions for Share1.
+
+- [ ] Yes.
+- [x] No.
+
+### Your network contains an Active Directory domain named contoso.com. The domain contains group managed service accounts (gMSAs). You have a server named Server1 that runs Windows Server and is in a workgroup. Server1 hosts Windows containers. You need to ensure that the Windows containers can authenticate to contoso.com. Which three actions should you perform in sequence?
+
+![Question 218](images/question218.png)
+
+- [x] Box 1: In contoso.com, generate the Key Distribution Service (KDS) root key. Box 2: On Server1, run New-CredentialSpec. Box 3: On Server1, install and run ccg.exe.
+- [ ] Box 1: In contoso.com, generate the Key Distribution Service (KDS) root key. Box 2: On Server1, run New-CredentialSpec. Box 3: From a domain-joined computer, create the credential spec file and copy it to Server1.
+- [ ] Box 1: In contoso.com, create the gMSA and a standard user account. Box 2: In contoso.com, generate the Key Distribution Service (KDS) root key. Box 3: On Server1, install and run ccg.exe.
+- [ ] Box 1: From a domain-joined computer, create the credential spec file and copy it to Server1. Box 2: In contoso.com, create the gMSA and a standard user account. Box 3:  On Server1, run New-CredentialSpec.
+- [ ] Box 1: On Server1, install and run ccg.exe. Box 2: From a domain-joined computer, create the credential spec file and copy it to Server1. Box 3: On Server1, run New-CredentialSpec.
+
+### Your on-premises network contains an Active Directory domain named contoso.com. You have an Azure AD tenant. You plan to sync contoso.com with the Azure AD tenant by using Azure AD Connect cloud sync. You need to create an account that will be used by Azure AD Connect cloud sync. Which type of account should you create?
+
+- [ ] system-assigned managed identity.
+- [x] group managed service account (gMSA).
+- [ ] user.
+- [ ] InetOrgPerson.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain. The domain contains the domain controllers shown in the following table.You need to ensure that if an attacker compromises the computer account of RODC1, the attacker cannot view the Employee-Number AD DS attribute. Which partition should you modify?
+
+![Question 220](images/question220.png)
+
+- [ ] configuration.
+- [ ] global catalog.
+- [ ] domain.
+- [x] schema.
+
+### Your network contains an on-premises Active Directory Domain Services (AD DS) domain named contoso.com that syncs with an Azure AD tenant. The tenant contains a group named Group1 and the users shown in the following table. Domain/OU filtering in Azure AD Connect is configured as shown in the Filtering exhibit. (Click the Filtering tab.) You review the Azure AD Connect configurations as shown in the Configure exhibit. (Click the Configure tab.) User1 can use self-service password reset (SSPR) to reset his password.
+
+![Question 221 part 1](images/question211_222_223_1.png)
+![Question 221 part 2](images/question221_222_223_2.png)
+![Question 221 part 3](images/question221_222_223_3.png)
+![Question 221 part 4](images/question221_222_223_4.png)
+
+- [x] Yes.
+- [ ] No.
+
+### Your on-premises network contains an Active Directory Domain Services (AD DS) domain. You plan to sync the domain with an Azure AD tenant by using Azure AD Connect cloud sync. You need to meet the following requirements: Install the software required to sync the domain and Azure AD. Enable password hash synchronization. What should you install, and what should you use to enable password hash synchronization? Use:
+
+![Question 224](images/question224_225.png)
+
+- [ ] Active Directory Administrative Center.
+- [ ] Azure AD Connect.
+- [ ] The AD FS Management console.
+- [x] The Azure portal.
+
+### Your network contains two Active Directory Domain Services (AD DS) forests as shown in the following exhibit. The forests contain the domain controllers shown in the following table. You perform the following actions on DC1: Create a user named User1. Extend the schema with a new attribute named Attribute1. To which domain controllers are User1 and Attribute1 replicated? User1:
+
+![Question 221 part 1](images/question226_227_1.png)
+![Question 221 part 2](images/question226_227_2.png)
+![Question 221 part 3](images/question226_227_3.png)
+
+- [ ] DC2 only.
+- [ ] DC3 only.
+- [ ] DC2 and DC3 only.
+- [x] DC3 and DC4 only.
+- [ ] DC2, DC3, and DC4.
+
+### Your network contains two Active Directory Domain Services (AD DS) forests as shown in the following exhibit. The forests contain the domain controllers shown in the following table. You perform the following actions on DC1: Create a user named User1. Extend the schema with a new attribute named Attribute1. To which domain controllers are User1 and Attribute1 replicated? Attribute1:
+
+![Question 221 part 1](images/question226_227_1.png)
+![Question 221 part 2](images/question226_227_2.png)
+![Question 221 part 3](images/question226_227_3.png)
+
+- [ ] DC2 only.
+- [x] DC4 only.
+- [ ] DC2 and DC3 only.
+- [ ] DC2, DC3, and DC4.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain. The domain contains the resources shown in the following table. You plan to replicate a volume from Server1 to Server2 by using Storage Replica. You need to configure Storage Replica. Where should you install Windows Admin Center?
+
+![Question 228](images/question228.png)
+
+- [ ] Server1.
+- [x] CLIENT1.
+- [ ] DC1.
+- [ ] Server2.
+
+### You have an on-premises Active Directory Domain Services (AD DS) domain named contoso.com that syncs with Azure AD by using Azure AD Connect. You enable password protection for contoso.com. You need to prevent users from including the word contoso as part of their password. What should you use?
+
+- [x] the Azure Active Directory admin center.
+- [ ] Active Directory Users and Computers.
+- [ ] Synchronization Service Manager.
+- [ ] Windows Admin Center.
+
+### Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three domains. Each domain contains 10 domain controllers. You plan to store a DNS zone in a custom Active Directory partition. You need to create the Active Directory partition for the zone. The partition must replicate to only four of the domain controllers. What should you use?
+
+- [ ] Windows Admin Center.
+- [ ] Set-DnsServer.
+- [ ] New-ADObject.
+- [x] ntdsutil.exe.
+
+### This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Company Information ADatum Corporation is a manufacturing company that has a main office in Seattle and two branch offices in Los Angeles and Montreal.Fabrikam Partnership ADatum recently partnered with 2 company named Fabrikam, Inc. Fabrikam is a manufacturing company that has a main office in Boston and a branch office in Orlando. Both companies intend to collaborate on several joint projects. Existing Environment ADatum AD DS Environment The on-premises network of ADatum contains an Active Directory Domain Services (AD DS) forest named adatum.com. The forest contains two domains named adatum.com and east.adatum.com and the domain controllers shown in the following table. Fabrikam AD DS Environment The on-premises network of Fabrikam contains an AD DS forest named fabrikam.com. The forest contains two domains named fabrikam.com and south.fabrikam.com. The fabrikam.com domain contains an organizational unit (OU) named Marketing. Server Infrastructure The adatum.com domain contains the servers shown in the following table. HyperV1 contains the virtual machines shown in the following table. All the virtual machines on HyperV1 have only the default management tools installed. SSPace1 contains the Storage Spaces virtual disks shown in the following table. Azure Resources ADatum has an Azure subscription that contains an Azure AD tenant. Azure AD Connect is configured to sync the adatum.com forest with Azure AD. The subscription contains the virtual networks shown in the following table. The subscription contains the Azure Private DNS zones shown in the following table. The subscription contains the virtual machines shown in the following table. All the servers are in a workgroup. The subscription contains a storage account named storage1 that has a file share named share1. Requirements Planned Changes ADatum plans to implement the following changes:  Sync Data1 to share1.  Configure an Azure runbook named Task1. Enable Azure AD users to sign in to Server1.  Create an Azure DNS Private Resolver that has the following configurations:  Name: Private1  Region: West US  Virtual network: VNet1  Inbound endpoint: SubnetB  Enable users in the adatum.com domain to access the resources in the south.fabrikam.com domain. Technical Requirements ADatum identifies the following technical requirements: The data on SSPace1 must be available always. DC2 must become the schema master if DC1 fails. VM3 must be configured to enable per-folder quotas.Trusts must allow access to only the required resources.  The users in the Marketing OU must have access to storage1. Azure Automanage must be used on all supported Azure virtual machines. A direct SSH session must be used to manage all the supported virtual machines on HyperV1. DC1 fails. You need to meet the technical requirements for the schema master. You run ntdsutil.exe. Which five commands should you run in sequence? 
+
+![Question 234 part 1](images/question233_1.png)
+![Question 234 part 2](images/question233_2.png)
+![Question 234 part 3](images/question233_3.png)
+![Question 234 part 4](images/question233_4.png)
+![Question 234 part 5](images/question233_5.png)
+![Question 234 part 6](images/question233_6.png)
+![Question 234 part 7](images/question233_7.png)
+
+- [ ][NO_ANSWER]
+
+### This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study - To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview -Company Information - ADatum Corporation is a manufacturing company that has a main office in Seattle and two branch offices in Los Angeles and Montreal. Fabrikam Partnership - ADatum recently partnered with 2 company named Fabrikam, Inc. Fabrikam is a manufacturing company that has a main office in Boston and a branch office in Orlando. Both companies intend to collaborate on several joint projects. Existing Environment - ADatum AD DS Environment - The on-premises network of A. Datum contains an Active Directory Domain Services (AD DS) forest named adatum.com. The forest contains two domains named adatum.com and east.adatum.com and the domain controllers shown in the following table. Fabrikam AD DS Environment - The on-premises network of Fabrikam contains an AD DS forest named fabrikam.com. The forest contains two domains named fabrikam.com and south.fabrikam.com. The fabrikam.com domain contains an organizational unit (OU) named Marketing. Server Infrastructure - The adatum.com domain contains the servers shown in the following table. HyperV1 contains the virtual machines shown in the following table. All the virtual machines on HyperV1 have only the default management tools installed. SSPace1 contains the Storage Spaces virtual disks shown in the following table. Azure Resources - ADatum has an Azure subscription that contains an Azure AD tenant. Azure AD Connect is configured to sync the adatum.com forest with Azure AD. The subscription contains the virtual networks shown in the following table. The subscription contains the Azure Private DNS zones shown in the following table. The subscription contains the virtual machines shown in the following table. All the servers are in a workgroup. The subscription contains a storage account named storage1 that has a file share named share1. Requirements - Planned Changes - ADatum plans to implement the following changes:  Sync Data1 to share1. Configure an Azure runbook named Task1. Enable Azure AD users to sign in to Server1. Create an Azure DNS Private Resolver that has the following configurations: Name: Private1 Region: West US Virtual network: VNet1 Inbound endpoint: SubnetB  Enable users in the adatum.com domain to access the resources in the south.fabrikam.com domain. Technical Requirements - ADatum identifies the following technical requirements: The data on SSPace1 must be available always. DC2 must become the schema master if DC1 fails. VM3 must be configured to enable per-folder quotas. Trusts must allow access to only the required resources. The users in the Marketing OU must have access to storage1. Azure Automanage must be used on all supported Azure virtual machines.  A direct SSH session must be used to manage all the supported virtual machines on HyperV1. You need to ensure that access to storage1 for the Marketing OU users meets the technical requirements. What should you implement?
+
+![Question 234 part 1](images/question234_235_1.png)
+![Question 234 part 2](images/question234_235_2.png)
+![Question 234 part 3](images/question234_235_3.png)
+![Question 234 part 4](images/question234_235_4.png)
+![Question 234 part 5](images/question234_235_5.png)
+![Question 234 part 6](images/question234_235_6.png)
+![Question 234 part 7](images/question234_235_7.png)
+
+- [ ] Active Directory Federation Services (AD FS).
+- [ ] Azure AD Connect in staging mode.
+- [x] Azure AD Connect cloud sync.
+- [ ] Azure AD Connect in active mode.
+
+### You use a Group Policy preference to map \\dc1.contoso.com\install as drive H for all users. If a user already has an existing drive mapping for H, the new drive mapping must take precedence. To complete this task, sign in to the required computer or computers.
+
+![Question 243](images/question243.png)
+
+- [x]  1. Open Group Policy Management. 2. Right-click the domain or the required subfolder to create a new GPO, or select an already existing one. Right-click and select Edit to open the Group Policy Management Editor. 3. Go to User Configuration > Preferences > Windows Settings > Drive Maps. 4. Right-click and select New > Mapped Drive. 5. Under the General tab (see Figure below), do the following. 6. Action: Select Create or Update. 7. Location: Specify the full file path, e.g. \\Anjali-dc1\c. Specify: \\dc1.contoso.com\install 8. Reconnect: Enable this to auto connect the drive. 9. Label as: Pick a suitable name for the shared drive, e.g. SharedDrive. 10. Drive Letter: Select a suitable letter for the drive, e.g. K. Specify H 11. Connect as: Enter a username and password if you want users to connect with certain credentials other than their own Windows login credentials. 12. Hide/Show this drive: Select whether you want to hide the folder or make it visible on the network. 13. Hide/Show all drives: Select whether, by default, all the shared drives/folders are hidden or visible.
+dc1.contoso.com
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the users shown in the following table. The domain has the Group Policy Objects (GPOs) shown in the following table. The GPOs are configured as shown in the following table.1. When User1 changes their password, at least eight characters must be used for the new password.
+
+![Question 244 part 1](images/question244_245_246_1.png)
+![Question 244 part 2](images/question244_245_246_2.png)
+![Question 244 part 3](images/question244_245_246_3.png)
+![Question 244 part 4](images/question244_245_246_4.png)
+
+- [x] Yes.
+- [ ] No.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the users shown in the following table. The domain has the Group Policy Objects (GPOs) shown in the following table. The GPOs are configured as shown in the following table.1. When User2 changes their password, at least 12 characters must be used for the new password.
+
+![Question 245 part 1](images/question244_245_246_1.png)
+![Question 245 part 2](images/question244_245_246_2.png)
+![Question 245 part 3](images/question244_245_246_3.png)
+![Question 245 part 4](images/question244_245_246_4.png)
+
+- [ ] Yes.
+- [x] No.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the users shown in the following table. The domain has the Group Policy Objects (GPOs) shown in the following table. The GPOs are configured as shown in the following table.1. When User3 changes their password, at least 10 characters must be used for the new password.
+
+![Question 246 part 1](images/question244_245_246_1.png)
+![Question 246 part 2](images/question244_245_246_2.png)
+![Question 246 part 3](images/question244_245_246_3.png)
+![Question 246 part 4](images/question244_245_246_4.png)
+
+- [x] Yes.
+- [ ] No.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named adatum.com. The domain contains a file server named Server1 and three users named User1, User2, and User3. Server1 contains a shared folder named Share1 that has the following configurations: The share permissions for Share1 are configured as shown in the Share Permissions exhibit. Share1 contains a file named File1.bxt. The advanced security settings for File1.txt are configured as shown in the File Permissions exhibit. When User2 connects to \\Server1.adatum.com\Share1, File1.txtis visible.
+
+![Question 262 part 1](images/question261_262_263_1.jpg)
+![Question 262 part 2](images/question261_262_263_2.jpg)
+![Question 262 part 3](images/question261_262_263_3.jpg)
+![Question 262 part 4](images/question261_262_263_4.jpg)
+
+- [x] Yes.
+- [ ] No.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named adatum.com. The domain contains a file server named Server1 and three users named User1, User2, and User3. Server1 contains a shared folder named Share1 that has the following configurations: The share permissions for Share1 are configured as shown in the Share Permissions exhibit. Share1 contains a file named File1.bxt. The advanced security settings for File1.txt are configured as shown in the File Permissions exhibit. When User3 connects to \\Server1.adatum.com\Share1, File1.txtis visible.
+
+![Question 262 part 1](images/question261_262_263_1.jpg)
+![Question 262 part 2](images/question261_262_263_2.jpg)
+![Question 262 part 3](images/question261_262_263_3.jpg)
+![Question 262 part 4](images/question261_262_263_4.jpg)
+
+- [x] Yes.
+- [ ] No.
+
+### You need to meet the technical requirements for User1. The solution must use the principle of least privilege. What should you do?
+
+- [ ] Add Usersl to the Server Operators group in contoso.com.
+- [ ] Create a delegation on contoso.com.
+- [ ] Add Usersl to the Account Operators group in contoso.com.
+- [x] Create a delegation on 0U3.
+
+### You have a server named Server1 that hosts Windows containers. You plan to deploy an application that will have multiple containers. Each container will be You need to create a Docker network that supports the deployment of the application . Which type of network should you create?
+
+- [ ] transparent.
+- [x] I2bridge.
+- [ ] NAT.
+- [ ] I2tunnel.
+
+### This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more Information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements, if the case study has an All Information tab. note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. AD DS Environment The network contains an on-premises Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains two domains named contoso.com and canada.contoso.com. The forest contains the domain controllers shown in the following table. All the domain controllers are global catalog servers. Server Infrastructure The network contains the servers shown in the following table. A server named Server4 runs Windows Server and is in a workgroup. Windows Firewall on Servei4 uses the private profile. Server2 hosts three virtual machines named VM1. VM2, and VM3. VM3 is a file server that stores data in the volumes shown in the following table. Group Policies The contoso.com domain has the Group Policies Objects (GPOs) shown in the following table. Existing Identities The forest contains the users shown in the following table. The forest contains the groups shown in the following table. Current Problems When an administrator signs in to the console of VM2 by using Virtual Machine Connection, and then disconnects from the session without signing out another administrator can connect to the console session as the currently signed-in user. Requirements Contoso identifies the following technical requirements: Change the replication schedule for all site links to 30 minutes. Promote Server1 to a domain controller in canada.contoso.com. Install and authorize Server3 as a DHCP server. Ensure that User! can manage the membership of all the groups in ContosoOU3. Ensure that you can manage Server4 from Server1 by using PowerShell removing. Ensure that you can run virtual machines on VM1. Force users to provide credentials when they connect to VM2. On VM3, ensure that Data Deduplication on all volumes is possible. You need to meet the technical requirements for the site links. Which users can perform the required tasks?
+
+![Question 272 part 4](images/question272_4.jpg)
+![Question 272 part 5](images/question272_5.jpg)
+![Question 272 part 6](images/question272_6.jpg)
+
+- [ ] Admin1 only.
+- [ ] Admin1 and Admin3 only.
+- [x] Admin1 and Admin2 only.
+- [ ] Admin3 only.
+- [ ] Admin1, Adrrun2. and Admin3.
+
+### Your network contains an Active Directory Domain Services (AD DS) domain named conioso.com. You need to identify which server is the PDC emulator for the domain. Does this meet the goal?
+
+- [x] Yes.
+- [ ] No.
+
+### This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more Information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements, if the case study has an All Information tab. note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Fabrikam, Inc. Is a manufacturing company that has a main office In New York and a branch office in Seattle. On-premises Servers The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. On-premises Network The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP! contains a scope named Scope1 that has addresses for the New York office. DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. Group Policy Object (GPOs) The cwp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Requirements: Fabrikam Identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and ExpressRoute. Both on-premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattfefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam,com in Vnet1. Deploy an Azure Virtual Desktop host pool lo Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Networking Requirements Fabrikam identifies the following security requirements: Apply GP04 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout lime manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab. fabrikam or fsbr! Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. File Sharing Requirements You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. You need to configure remote administration to meet the security requirements. What should you use?
+
+![Question 283 part 1](images/question282_1.jpg)
+![Question 283 part 2](images/question282_2.jpg)
+
+- [x] just in time (JIT) VM access.
+- [ ] Azure AD Privileged Identity Management (PIM).
+- [ ] the Remote Desktop extension for Azure Cloud Services.
+- [ ] an Azure Bastion host.
+
+### You need to meet the security requirements for passwords. Where should you configure the components for Azure AD Password Protection? The Azure AD Password Protection DC agent: [...].
+
+![Question 284](images/question284_285_286.jpg)
+
+- [ ] Locations.
+- [ ] DC1 only.
+- [x] All the domain controllers.
+- [ ] VM1 and VM2.
+- [ ] The Azure AD tenant.
+- [ ] Answer Area.
+
+### At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements, if the case study has an All Information tab. note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Fabrikam, Inc. Is a manufacturing company that has a main office In New York and a branch office in Seattle. On-premises Servers The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. On-premises NetworkThe New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP! contains a scope named Scope1 that has addresses for the New York office. DHCP2 contains a scope named Scope2 that has addresses for the Seattle office.Group Policy Object (GPOs) The cwp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Requirements: Fabrikam Identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and ExpressRoute. Both on-premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattfefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam,com in Vnet1. Deploy an Azure Virtual Desktop host pool lo Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Networking Requirements Fabrikam identifies the following security requirements: Apply GP04 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout lime manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab. fabrikam or fsbr! Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. File Sharing Requirements You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. The Azure AD Password Protection proxy service: The Azure AD tenant [...].
+
+![Question 296 part 1](images/question295_296_297_1.jpg)
+![Question 296 part 2](images/question295_296_297_2.jpg)
+![Question 296 part 3](images/question295_296_297_3.jpg)
+
+- [ ] DC1 only.
+- [ ] All the domain controllers.
+- [ ] VM1 and VM2.
+- [x] The Azure AD tenant.
+
+### At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements, if the case study has an All Information tab. note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Fabrikam, Inc. Is a manufacturing company that has a main office In New York and a branch office in Seattle. On-premises Servers The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. On-premises NetworkThe New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP! contains a scope named Scope1 that has addresses for the New York office. DHCP2 contains a scope named Scope2 that has addresses for the Seattle office.Group Policy Object (GPOs) The cwp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Requirements: Fabrikam Identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and ExpressRoute. Both on-premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattfefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam,com in Vnet1. Deploy an Azure Virtual Desktop host pool lo Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Networking Requirements Fabrikam identifies the following security requirements: Apply GP04 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout lime manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab. fabrikam or fsbr! Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. File Sharing Requirements You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. A custom banned password list: [...].
+
+![Question 297 part 1](images/question295_296_297_1.jpg)
+![Question 297 part 2](images/question295_296_297_2.jpg)
+![Question 297 part 3](images/question295_296_297_3.jpg)
+
+- [ ] DC1 only.
+- [ ] All the domain controllers.
+- [x] VM1 and VM2.
+- [ ] The Azure AD tenant.
+
+### This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more Information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements, if the case study has an All Information tab. note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. AD DS Environment The network contains an on-premises Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains two domains named contoso.com and canada.contoso.com. The forest contains the domain controllers shown in the following table. All the domain controllers are global catalog servers. Server Infrastructure The network contains the servers shown in the following table. A server named Server4 runs Windows Server and is in a workgroup. Windows Firewall on Servei4 uses the private profile. Server2 hosts three virtual machines named VM1. VM2, and VM3. VM3 is a file server that stores data in the volumes shown in the following table. Group Policies The contoso.com domain has the Group Policies Objects (GPOs) shown in the following table. Existing Identities The forest contains the users shown in the following table. The forest contains the groups shown in the following table. Current Problems When an administrator signs in to the console of VM2 by using Virtual Machine Connection, and then disconnects from the session without signing out another administrator can connect to the console session as the currently signed-in user. Requirements Contoso identifies the following technical requirements: Change the replication schedule for all site links to 30 minutes. Promote Server1 to a domain controller in canada.contoso.com. Install and authorize Server3 as a DHCP server. Ensure that User! can manage the membership of all the groups in ContosoOU3. Ensure that you can manage Server4 from Server1 by using PowerShell removing. Ensure that you can run virtual machines on VM1. Force users to provide credentials when they connect to VM2. On VM3, ensure that Data Deduplication on all volumes is possible. You need to meet the technical requirements for VM3 On which volumes can you enable Data Deduplication?
+
+![Question 301](images/question301_1.jpg)
+![Question 301](images/question301_2.jpg)
+![Question 301](images/question301_3.jpg)
+![Question 301](images/question301_4.jpg)
+![Question 301](images/question301_5.jpg)
+![Question 301](images/question301_6.jpg)
+
+- [ ] D and E only.
+- [ ] C, D, E, and F.
+- [ ] D only.
+- [x] C and D only.
+- [ ] D, E, and F only.
