@@ -1,5 +1,7 @@
 # ⬆️ Microsoft Azure AZ-800 (Windows Server Hybrid Administrator) Practice Tests Exams Questions & Answers
 
+![Promotional image](images/promotional.png)
+
 ## Table of Contents
 
 ### You have a server named Server1 that runs Windows Server. Server1 has the storage pools shown in the following table. You plan to create a virtual disk named VDisk1 that will use storage tiers.
