@@ -252,9 +252,9 @@ From here there is no update to the table of content ----->>>> After line 600!
 ### You have an Azure virtual machine named VM1 that runs Windows Server. You perform the following actions on VM1: Create a folder named Folder1 on volume C. Create a folder named Folder2 on volume D. Add a new data disk to VM1 and create a new volume that is assigned drive letter E. Install an app named App1 on volume E. You plan to resize VM1. Which objects will present after you resize VM1?
 
 - [ ] Folder1 and Folder2 only.
-- [ ] Folder1, volume E, and App1 only.
+- [x] Folder1, volume E, and App1 only.
 - [ ] Folder1 only.
-- [x] Folder1, Folder2, App1, and volume E.
+- [ ] Folder1, Folder2, App1, and volume E.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -376,8 +376,8 @@ From here there is no update to the table of content ----->>>> After line 600!
 ![Question 28 part 3](images/question26_27_28_3.png)
 ![Question 28 part 4](images/question26_27_28_4.png)
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -646,8 +646,8 @@ From here there is no update to the table of content ----->>>> After line 600!
 
 ### You have an Azure virtual machine named Server1 that runs a network management application. Server1 has the following network configuration. * Network interface.Nic1 * IP address 10.1.1.1/24 * Connected to: Vnet1/Subnet1 You need connect Server1 to an additional subnet named Vnet1/Subnet2. What should you do?
 
-- [x] Create a private endpoint on Subnet2
-- [ ] Add a network interface to server1.
+- [ ] Create a private endpoint on Subnet2
+- [x] Add a network interface to server1.
 - [ ] Modify the IP configurations of Nic1.
 - [ ] Add an IP configuration to Nic1.
 
@@ -665,8 +665,8 @@ Server to use to create the IFM source:
 
 Tool to use to create the IFM source:
 - [ ] Azure Backup.
-- [x] Dcdiag.exe.
-- [ ] Ntdsutil.exe.
+- [ ] Dcdiag.exe.
+- [x] Ntdsutil.exe.
 - [ ] Repadmin.exe.
 - [ ] Windows Server Backup.
 
@@ -677,8 +677,8 @@ Tool to use to create the IFM source:
 ![Question 55](images/question55.png)
 
 File1 is deduplicated after the deduplication job runs:
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 File3 is deduplicated after the deduplication job runs:
 - [ ] Yes.
@@ -720,8 +720,8 @@ File4 is deduplicated after the deduplication job runs:
 
 ![Question 58](images/question58.jpg)
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -747,9 +747,9 @@ File4 is deduplicated after the deduplication job runs:
 
 ### Your network contains a multi-site Active Directory Domain Services (AD DS) forest. Each Active Directory site is connected by using manually configured site links and automatically generated connections. You need to minimize the convergence time for changes to Active Directory. What should you do?
 
-- [ ] For each site link, modify the options attribute.
+- [x] For each site link, modify the options attribute.
 - [ ] For each site link, modify the site link costs.
-- [x] For each site link, modify the replication schedule.
+- [ ] For each site link, modify the replication schedule.
 - [ ] Create a site link bridge that contains all the site links.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -810,8 +810,8 @@ DHCP scopes:
 - [ ] 4.
 
 DHCP relays:
-- [x] 1.
-- [ ] 2.
+- [ ] 1.
+- [x] 2.
 - [ ] 3.
 - [ ] 4.
 
@@ -828,8 +828,8 @@ DHCP relays:
 
 ### You have an Azure Active Directory Domain Services (Azure AD DS) domain named contoso.com. You need to provide an administrator with the ability to manage Group Policy Objects (GPOs). The solution must use the principle of least privilege. To which group should you add the administrator?
 
-- [ ] AAD DC Administrators.
-- [x] Domain Admins.
+- [x] AAD DC Administrators.
+- [ ] Domain Admins.
 - [ ] Schema Admins.
 - [ ] Enterprise Admins.
 - [ ] Group Policy Creator Owners.
@@ -887,9 +887,9 @@ DHCP relays:
 ![Question 77](images/question77.jpg)
 
 - [ ] Box 1: Instruct User1 to run the Active Directory Domain Services installation Wizard on Server Box 2: Create a site link. Box 3: Pre-create an RODOC account.
-- [x] Box 1: Create a site and a subnet. Box 2: Pre-create an RODOC account. Box 3: Instruct User1 to run the Active Directory Domain Services installation Wizard on Server1.
+- [ ] Box 1: Create a site and a subnet. Box 2: Pre-create an RODOC account. Box 3: Instruct User1 to run the Active Directory Domain Services installation Wizard on Server1.
 - [ ] Box 1: Create a site link. Box 2: Pre-create an RODOC account. Box 3: Add User1 to the Contoso\Administstrators group.
-- [ ] Box 1: Pre-create an RODOC account. Box 2: Add User1 to the Contoso\Administstrators group. Box 3: Create a site and a subnet.
+- [x] Box 1: Pre-create an RODOC account. Box 2: Create a site and a subnet. Box 3: Instruct User1 to run the Active Directory Domain Services installation Wizard on Server1.
 
 ### Your network contains an Active Directory Domain Services (AD DS) domain. The network also contains 20 domain controllers, 100 member servers, and 100 client computers. You have a Group Policy Object (GPO) named GPO1 that contains Group Policy preferences. You plan to link GPO1 to the domain. You need to ensure that the preference in GPO1 apply only to domain member servers and NOT to domain controllers or client computers. All the other Group Policy settings in GPO1 must apply to all the computers. The solution must minimize administrative effort. Which type of item level targeting should you use?
 
@@ -949,7 +949,7 @@ DHCP relays:
 
 ![Question 88](images/question88.jpg)
 
-- [x] Box 1: Add-KdsRootKey Box 2: New-ADServiceAccount Box 2: Install-ADServiceAccoun.
+- [x] Box 1: Add-KdsRootKey Box 2: New-ADServiceAccount Box 3: Install-ADServiceAccoun.
 - [ ] Box 1: Add-ADComputerServiceAccount Box 2: Add-KdsRootKey Box 3: New-ADServiceAccount.
 - [ ] Box 1: Install-ADServiceAccount Box 2: Set-KdsConfiguration Box 3: Add-KdsRootKey.
 - [ ] Box 1: New-ADServiceAccount Box 2: Add-ADComputerServiceAccount Box 3: Add-KdsRootKey.
@@ -1157,8 +1157,8 @@ dc1.contoso.com
 ![Question 116 part 3](images/question116_117_118_3.png)
 ![Question 116 part 4](images/question116_117_118_4.png)
 
-- [x] Yes.
-- [ ] No.
+- [ ] Yes.
+- [x] No.
 
 ### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the users shown in the following table. The domain has the Group Policy Objects (GPOs) shown in the following table. The GPOs are configured as shown in the following table.1. When User2 changes their password, at least 12 characters must be used for the new password.
 
@@ -1167,8 +1167,8 @@ dc1.contoso.com
 ![Question 117 part 3](images/question116_117_118_3.png)
 ![Question 117 part 4](images/question116_117_118_4.png)
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 ### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the users shown in the following table. The domain has the Group Policy Objects (GPOs) shown in the following table. The GPOs are configured as shown in the following table.1. When User3 changes their password, at least 10 characters must be used for the new password.
 
@@ -1187,8 +1187,8 @@ dc1.contoso.com
 ![Question 119 part 3](images/question119_120_121_3.jpg)
 ![Question 119 part 4](images/question119_120_121_3.jpg)
 
-- [x] Yes.
-- [ ] No.
+- [ ] Yes.
+- [x] No.
 
 ### Your network contains an Active Directory Domain Services (AD DS) domain named adatum.com. The domain contains a file server named Server1 and three users named User1, User2, and User3. Server1 contains a shared folder named Share1 that has the following configurations: The share permissions for Share1 are configured as shown in the Share Permissions exhibit. Share1 contains a file named File1.bxt. The advanced security settings for File1.txt are configured as shown in the File Permissions exhibit. When User3 connects to \\Server1.adatum.com\Share1, File1.txtis visible.
 
@@ -1276,7 +1276,7 @@ dc1.contoso.com
 - [x] C and D only.
 - [ ] D, E, and F only.
 
-### This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. Your network contains an Active Directory Domain Services
+### This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. Your network contains an Active Directory Domain Services.
 
 - [ ] Yes.
 - [x] No.
@@ -1307,8 +1307,8 @@ dc1.contoso.com
 ![Question 134 part 2](images/question132_133_134_2.jpg)
 ![Question 134 part 3](images/question132_133_134_3.jpg)
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 ### ...
 
@@ -1385,9 +1385,9 @@ Site1 and Site2.
 (SMSA) in AD DS. Box 2: Confiqure the liS application pool to run as
 Network Service. Box 3: Configure the lIS application pool to run as a
 specified user account.
-- [x] Box 1: Confiqure the lIS application pool to run as
-Network Service. Box 2: Create a group managed service account (gMSA)
-I in Active Directory. Box 3: Create the Key Distribution Services (KDS) root key in AD DS.
+- [x] Box 1:Create the Key Distribution Services (KDS) root key in AD DS. Box 2: Create a group managed service account (gMSA)
+I in Active Directory. Box 3: Configure the lIS application pool to run as a
+specified user account.
 - [ ] Box 1: Create a system-assigned managed identity in
 Azure AD. Box 2: Create a group managed service account (gMSA)
 in Active Directory. Box 3: Confiqure the lIS application pool to run as Network Service.
@@ -1452,8 +1452,8 @@ specified user account. Box 3: Create a user-assigned managed identity in Azure 
 
 - [ ] Server1: Enable-PSRemoting. Server4: Start-Service.
 - [ ]Server1:Enable-ServerManagerStandardUserRemoting. Server4: Set-Item.
-- [ ] Server1: | Set-Item. Server4: Enable-ServerManagerStandardUserRemoting.
-- [x] Server1: Start-Service. Server4: Enable-PSRemoting.
+- [x] Server1: | Set-Item. Server4: Enable-ServerManagerStandardUserRemoting.
+- [ ] Server1: Start-Service. Server4: Enable-PSRemoting.
 
 ### You have a Microsoft 365 E5 subscription that contains the groups shown in the following table.Which groups can be members of Group1 and Group4?
 
@@ -1466,8 +1466,8 @@ specified user account. Box 3: Create a user-assigned managed identity in Azure 
 
 ### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. You need to identify which server is the PDC emulator for the domain. Solution: From Active Directory Domains and Trusts, you right-click Active Directory Domains and Trusts in the console tree, and then select Operations Master. Does this meet the goal?
 
-- [ ] Yes
-- [x] No
+- [x] Yes
+- [ ] No
 
 ### ...
 
@@ -1531,7 +1531,7 @@ specified user account. Box 3: Create a user-assigned managed identity in Azure 
 
 - [ ] Role: Domain naming master. Console: Active Directory Domains and Trusts.
 - [ ] Role: Infrastructure master. Console: Active Directory Sites and Services.
-- [x] Role: IPDC emulator. Console: Active Directory Users and Computers.
+- [x] Role: PDC emulator. Console: Active Directory Users and Computers.
 - [ ] Role: RID master. Console: Active Directory Administrative Center.
 
 ### DRAG DROP-Your network contains an Active Directory domain named contoso.com. The domain contains group managed service accounts (gMSAs). You have a server named Server1 that runs Windows Server and is in a workgroup. Server1 hosts Windows containers. You need to ensure that the Windows containers can authenticate to contoso.com. Which three actions should you perform in sequence?
@@ -1629,23 +1629,23 @@ Service (KDS) root key. Box 2: On Server1, run New-CredentialSpec. Box 3: On Ser
 
 ### Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three Active Directory sites named Site1, Site2, and Site3. Each site contains two domain controllers. The sites are connected by using DEFAULTIPSITELINK. You open a new branch office that contains only client computers. You need to ensure that the client computers in the new office are primarily authenticated by the domain controllers in Site1. Solution: You create an organization unit (OU) that contains the client computers in the branch office. You configure the Try Next Closest Site Group Policy Object (GPO) setting in a GPO that is linked to the new OU. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 ### Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three Active Directory sites named Site1, Site2, and Site3. Each site contains two domain controllers. The sites are connected by using DEFAULTIPSITELINK. You open a new branch office that contains only client computers. You need to ensure that the client computers in the new office are primarily authenticated by the domain controllers in Site1. Solution: You create a new site named Site4 and associate Site4 to DEFAULTSITELINK. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 ### Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three Active Directory sites named Site1, Site2, and Site3. Each site contains two domain controllers. The sites are connected by using DEFAULTIPSITELINK. You open a new branch office that contains only client computers. You need to ensure that the client computers in the new office are primarily authenticated by the domain controllers in Site1. Solution: You configure the Try Next Closest Site Group Policy Object (GPO) setting in a GPO that is linked to Site1. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 ### Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. You need to identify which server is the PDC emulator for the domain. Solution: From Active Directory Sites and Services, you right-click Default-First-Site-Name in the console tree, and then select Properties. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 ### Your network contains a single-domain Active Directory Domain Services (AD DS) forest named contoso.com. The forest contains the servers shown in the following exhibit table. You plan to install a line-of-business (LOB) application on Server1. The application will install a custom Windows service. A new corporate security policy states that all custom Windows services must run under the context of a group managed service account (gMSA). You deploy a root key. You need to create, configure, and install the gMSA that will be used by the new application. Which two actions should you perform?
 
