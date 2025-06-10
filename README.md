@@ -680,18 +680,7 @@ File4 is deduplicated after the deduplication job runs:
 - [ ] a Site-to-SiteVPN.
 - [ ] an ExpressRoute circuit.
 - [ ] Azure Extended Network.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### Your network contains an on -premises Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the objects shown in the following table. You plan to sync contoso.com with an Azure Active Directory (Azure AD) tenant by using Azure AD Connect. You need to ensure that all the objects can be used in Conditional Access policies. What should you do?
-
-![Question 60](images/question60.jpg)
-
-- [ ] Change the scope of Group2 to Universal.
-- [ ] Clear the Configure device writeback option.
-- [ ] Change the scope o’ Group1 and Group2 to Global.
-- [x] Select the Configure Hybrid Azure AD join option.
-
+- [ ] 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your network contains a multi-site Active Directory Domain Services (AD DS) forest. Each Active Directory site is connected by using manually configured site links and automatically generated connections. You need to minimize the convergence time for changes to Active Directory. What should you do?
