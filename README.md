@@ -472,16 +472,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You deploy a single-domain Active Directory Domain Services (AD DS) forest named contoso.com. You deploy five servers to the domain. You add the servers to a group named iTFarmHosts. You plan to configure a Network Load Balancing (NIB) cluster named NLBCluster.contoso.com that will contain the five servers. You need to ensure that the NLB service on the nodes of the cluster can use a group managed service account (gMSA) to authenticate. Which three PowerShell cmdlets should you run in sequence?
-
-![Question 41](images/question41.jpg)
-
-- [ ] Box 1: Add-KdsRootKey. Box 2: Install-ADServiceAccount. Box 3: Add-ADGroupMember.
-- [x] Box 1: Add-KdsRootKey. Box 2: New-ADServiceAccount. Box 3: Install-ADServiceAccount.
-- [ ] Box 1: Add-ADComputerServiceAccount. Box 2: Set-KdsConfiguration. Box 3: Install-ADServiceAccount.
-- [ ] Box 1: Install-ADServiceAccount. Box 2: Add-KdsRootKey. Box 3: Add-ADComputerServiceAccount.
-
-**[⬆ Back to Top](#table-of-contents)**
+### ...
 
 ### Fabrikam, Inc is a manufacturing company that has a main office in New York and a branch office in Seattle. The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. VM1 and VM2 are connected to the internet. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP1 contains a scope named Scope1 that has addresses for the New York office, DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. The network contains a single on-premises Active Directory Domain Services (AD DS) domain named corp.falbrikam.com. Currently, all the service accounts use individual domain user accounts. All domain controllers have the DNS Server role installed and host a copy of the Active Directory integrated DNS zone of corp.fabrikam.com. The corp.fabrikam.com AD DS domain syncs with an Azure Active Directory (Azure AD) tenant. The corp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Fabrikam identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and FxpressRoute. Both on premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattlefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam.com in Vnet1. Deploy an Azure Virtual Desktop host pool to Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD-joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Fabrikam identifies the following networking requirements: Implement Virtual WAN and ensure that all the network traffic between the sites uses Virtual WAN. All communications must occur over ExpressRoute. If a DHCP server fails, ensure that the client computers can continue to receive their dynamic IP address and renew their existing lease. Ensure that the resources in Vnet1 can resolve the names of the on-premises servers in the corp.fabrikam.com domain. Fabrikam identifies the following security requirements: Apply GPO4 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout time manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab, f@br1kAm or fabr!|. Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. You need to implement a name resolution solution that meets the networking requirements. Which two actions should you perform?
 
@@ -680,7 +671,9 @@ File4 is deduplicated after the deduplication job runs:
 - [ ] a Site-to-SiteVPN.
 - [ ] an ExpressRoute circuit.
 - [ ] Azure Extended Network.
-- [ ] 
+
+### ...
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your network contains a multi-site Active Directory Domain Services (AD DS) forest. Each Active Directory site is connected by using manually configured site links and automatically generated connections. You need to minimize the convergence time for changes to Active Directory. What should you do?
@@ -883,14 +876,7 @@ DHCP relays:
 - [ ] Clear the Configure device writeback option.
 - [ ] Change the scope of Group2 to Universal.
 
-### You deploy a single-domain Active Directory Domain Services (AD DS) forest named contoso.com. You deploy five servers to the domain. You add the servers to a group named ITFarmHosts. You plan to configure a Network Load Balancing (NLB) cluster named NLBCluster.contoso.com that will contain the five servers.You need to ensure that the NLB service on the nodes of the cluster can use a group managed service account (gMSA) to authenticate. Which three PowerShell cmdlets should you run in sequence?
-
-![Question 88](images/question88.jpg)
-
-- [x] Box 1: Add-KdsRootKey Box 2: New-ADServiceAccount Box 3: Install-ADServiceAccoun.
-- [ ] Box 1: Add-ADComputerServiceAccount Box 2: Add-KdsRootKey Box 3: New-ADServiceAccount.
-- [ ] Box 1: Install-ADServiceAccount Box 2: Set-KdsConfiguration Box 3: Add-KdsRootKey.
-- [ ] Box 1: New-ADServiceAccount Box 2: Add-ADComputerServiceAccount Box 3: Add-KdsRootKey.
+### ...
 
 ### Your network contains three Active Directory Domain Services (AD DS) forests as shown in the following exhibit. The network contains the users shown in the following table. The network contains the security groups shown in the following table. You can add User2 to Group3 [...].
 
